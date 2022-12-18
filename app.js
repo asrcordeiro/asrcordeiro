@@ -39,6 +39,3 @@ parcerias.addEventListener("click",()=>{
     subject.setAttribute('value', 'Parceria')
 })
 
-submit.addEventListener('click', ()=>{
-    alert('E-mail enviado com sucesso!')
-})
