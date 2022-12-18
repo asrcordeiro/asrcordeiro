@@ -185,6 +185,29 @@ section {
 }
 
 
+#whatsapp-button {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.5s;
+}
+
+#whatsapp-button:hover {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+#whatsapp-button a > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
 /* NAV */
 
 nav ul li {
