@@ -199,8 +199,6 @@ section {
     height: 70px;
 }
 
-
-
 #whatsapp-button a > img{
     width: 100%;
     height: 100%;
@@ -488,6 +486,10 @@ footer {
 
 @media (max-width: 1024px) {
 
+    #whatsapp-button {
+       display: none !important;
+    }
+
     nav > ul {
         display: none !important;
         
@@ -613,6 +615,7 @@ footer {
         margin: 10px 0;
         width: 100%;
     }
+
 
     
 }
