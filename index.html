@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <title>ASR Cordeiro</title>
 </head>
 
@@ -72,9 +73,11 @@
                     <button id="orcamentos" class="montserrat bg-green">Orçamentos</button>
                     <button id="parcerias" class="montserrat bg-darkGreen">Parcerias</button>
                 </div>
-                <form action="submit" class="flex flex-column align-items-center justify-content-space-evenly">
+                <form action="https://formsubmit.co/mcl.bpofinanceiro@gmail.com" method="POST" class="flex flex-column align-items-center justify-content-space-evenly">
+                    <input id="subject" type="hidden" name="_subject" value="Novo envio!">
+                    <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato, responderemos o mais rápido possível, fique atento(a) com sua caixa de de entrada e SPAM">
                     <input type="text" placeholder="Seu nome">
-                    <input type="email" placeholder="Seu e-mail">
+                    <input type="email" name="email" placeholder="Seu e-mail">
                     <input type="tel" placeholder="Seu telefone">
                     <textarea name="" id="" cols="30" rows="8" placeholder="Digite sua mensagem"></textarea>
                     <button id="submit" class="montserrat">Solicitar orçamento</button>
@@ -195,27 +198,27 @@
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Black_ver_1x/SVG/black_history-13.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Faturamento e emissão <br>de boletos</p>
                 </div>
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Black_ver_1x/SVG/black_calculator-34.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Conciliação bancária <br>e de caixa</p>
                 </div>
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Black_ver_1x/SVG/black_touch_id-49.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Integração contábil <br>100% digital</p>
                 </div>
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Black_ver_1x/SVG/black_calendar-09.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Relatórios financeiros</p>
                 </div>
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Black_ver_1x/SVG/black_piechart.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Reports em tempo real</p>
                 </div>
             </div>
             <button class="button text montserrat"> Contratar agora mesmo </button>
@@ -231,7 +234,7 @@
     <section id="solucoes" class="bg-white flex justify-content-center align-items-center">
         <div class="container flex flex-column justify-content-center align-items-center text-align-center">
             <p class="text">BPO Financeiro</p>
-            <h2 class="montserrat title">Outras Soluções <span class="montserrat title c-green">BPO Financeiro</span>
+            <h2 class="montserrat title">Outras Soluções <span class="montserrat title c-green">financeiras</span>
             </h2><br>
             <p class="text">Tudo feito com processos totalmente SEGUROS e EFICIENTES para sua o seu negócio.</p>
 
@@ -239,32 +242,37 @@
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Colored_ver_2x/SVG/colored_trend_up-90.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Organização 
+                        Financeira</p>
                 </div>
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Colored_ver_2x/SVG/colored_portfolio-55.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Reestruturação
+                        Financeira</p>
                 </div>
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Colored_ver_2x/SVG/colored_bank-77.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Abertura e <br>Encerramento 
+                        de empresas</p>
                 </div>
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Colored_ver_2x/SVG/colored_security_2-70.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Regularização de
+                        empresas</p>
                 </div>
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Colored_ver_2x/SVG/colored_investor_3-73.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Consultoria
+                        MEI</p>
                 </div>
 
                 <div class="item">
                     <img src="./assets/finance-icons-pack/Colored_ver_2x/SVG/colored_loan-63.svg" alt="icone">
-                    <p class="text">Gerenciamento de contas</p>
+                    <p class="text">Declaração anual</p>
                 </div>
             </div>
             <button class="button text montserrat"> Contratar agora mesmo </button>
@@ -338,7 +346,7 @@ Com isso mantemos a organização do ambiente e dos documentos,tornando eles mai
     </footer>
     <!-- FOOTER -->
 
-    <script src="./app.js"></script>
+    <script src="./dist/bundle.js"></script>
 </body>
 
 </html>

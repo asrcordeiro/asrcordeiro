@@ -5,6 +5,7 @@ const orcamentos = document.querySelector("#orcamentos")
 const parcerias = document.querySelector("#parcerias")
 const submit = document.querySelector("#submit")
 const buttons = document.querySelectorAll(".button")
+const subject = document.querySelector("#subject")
 
 buttons.forEach((e)=>{
     e.addEventListener('click',()=>{
@@ -26,6 +27,7 @@ orcamentos.addEventListener("click",()=>{
     parcerias.classList.add("bg-darkGreen")
     parcerias.classList.remove("bg-green")
     submit.innerHTML = "Solicitar orçamento"
+    subject.setAttribute('value', 'Orçamento')
 })
 
 parcerias.addEventListener("click",()=>{
@@ -34,4 +36,9 @@ parcerias.addEventListener("click",()=>{
     parcerias.classList.add("bg-green")
     parcerias.classList.remove("bg-darkGreen")
     submit.innerHTML = "Entrar em contato"
+    subject.setAttribute('value', 'Parceria')
+})
+
+submit.addEventListener('click', ()=>{
+    alert('E-mail enviado com sucesso!')
 })
